@@ -11,7 +11,7 @@ beat opinions.
 ## Setting up a dev environment
 
 ```bash
-git clone https://github.com/yusuf4lp/zero.git
+git clone https://github.com/4lptek1n/zero.git
 cd zero
 python -m venv .venv && source .venv/bin/activate
 pip install -e ".[dev]"
