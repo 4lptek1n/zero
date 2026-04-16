@@ -1,0 +1,17 @@
+# Problem
+Cap set in F_3^6. Return {'n': 6, 'vectors': [[...]]} from solve(). No three distinct vectors may sum to 0 mod 3. Maximize the set size. Best known lower bound: 112.
+
+# Current best candidates (lower score or higher score depending on the problem):
+
+## Candidate 0 — score=64.0
+```python
+def solve():
+    n = 6
+    vectors = []
+    for mask in range(1 << n):
+        vectors.append([((mask >> k) & 1) for k in range(n)])
+    return {"n": n, "vectors": vectors}
+```
+
+# Task
+Propose a NEW program that likely scores better. Output exactly one ```python``` block containing the full program, no commentary.

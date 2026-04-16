@@ -1,0 +1,22 @@
+# Problem
+Sorting network for 8 inputs. Return a list of (i,j) comparator pairs from `solve()`. The network must sort all 256 binary inputs. Fewer comparators is better. Best known optimal count is 19.
+
+# Current best candidates (lower score or higher score depending on the problem):
+
+## Candidate 0 — score=19.0
+```python
+def solve():
+    # Floyd's sorting network for 8 inputs, 19 comparators.
+    return [
+        (0,1),(2,3),(4,5),(6,7),
+        (0,2),(1,3),(4,6),(5,7),
+        (1,2),(5,6),(0,4),(3,7),
+        (1,5),(2,6),
+        (1,4),(3,6),
+        (2,4),(3,5),
+        (3,4),
+    ]
+```
+
+# Task
+Propose a NEW program that likely scores better. Output exactly one ```python``` block containing the full program, no commentary.

@@ -1,0 +1,8 @@
+{
+  "problem": "matmul44_z2",
+  "generations": 200,
+  "total_programs": 4084,
+  "best_score": 64.0,
+  "best_program_id": 1,
+  "baseline_score": 64.0
+}

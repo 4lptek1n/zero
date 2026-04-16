@@ -1,0 +1,11 @@
+{
+  "problem": "capset:6",
+  "ok": true,
+  "valid": true,
+  "score": 77.0,
+  "baseline_score": 112.0,
+  "higher_is_better": true,
+  "error": null,
+  "elapsed_seconds": 15.002736079011811,
+  "cached": false
+}

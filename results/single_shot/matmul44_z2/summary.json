@@ -1,0 +1,11 @@
+{
+  "problem": "matmul44_z2",
+  "ok": true,
+  "valid": true,
+  "score": 64.0,
+  "baseline_score": 64.0,
+  "higher_is_better": false,
+  "error": null,
+  "elapsed_seconds": 26.293729823999456,
+  "cached": false
+}

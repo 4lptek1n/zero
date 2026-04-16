@@ -1,0 +1,8 @@
+{
+  "problem": "sortnet8",
+  "generations": 100,
+  "total_programs": 3244,
+  "best_score": 19.0,
+  "best_program_id": 1,
+  "baseline_score": 19.0
+}

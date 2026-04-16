@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Build / dist
+build/
+dist/
+
+# SQLite ephemeral
+*.sqlite-wal
+*.sqlite-shm
+
+# Local runs (committed runs live under results/)
+runs/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# zero on-disk LLM cache (regenerated automatically on first run)
+.zero_cache/

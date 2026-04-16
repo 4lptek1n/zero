@@ -1,0 +1,40 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  python:
+    name: lint + tests + smoke
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: set up python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: ruff check
+        run: ruff check .
+
+      - name: pytest
+        run: pytest -q
+
+      - name: no-LLM smoke (5 generations, 2 islands)
+        run: |
+          zero run --problem sortnet8 --generations 5 --island-count 2 --no-llm \
+                   --output-dir runs/ci-smoke
+          test -f runs/ci-smoke/summary.json
+          python -c "import json; s=json.load(open('runs/ci-smoke/summary.json')); assert s['best_score'] is not None, s; print(s)"

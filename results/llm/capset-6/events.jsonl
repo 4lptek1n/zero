@@ -1,0 +1,103 @@
+{"ts": 1776374133.0834231, "type": "run_started", "run_id": 1, "problem": "capset", "config": {"problem": "capset:6", "seed": 0, "output_dir": "results/llm/capset-6", "use_llm": true, "evolution": {"island_count": 4, "island_size": 10, "generations": 100, "migration_every": 10, "migration_fraction": 0.1, "tournament_size": 3, "crossover_rate": 0.2, "mutation_rate": 1.0, "elitism": 1}, "sandbox": {"cpu_seconds": 5.0, "wall_seconds": 10.0, "memory_mb": 512}, "llm": {"model": "claude-opus-4-6", "temperatures": [0.4, 0.8, 1.0], "max_tokens": 8192, "parallel_calls": 3, "top_k_context": 3, "cache_dir": ".zero_cache/llm"}}}
+{"ts": 1776374133.0834904, "type": "llm_status", "enabled": true, "model": "claude-opus-4-6"}
+{"ts": 1776374133.1228998, "type": "program_inserted", "program_id": 1, "generation": 0, "island": 0, "score": 64.0, "valid": true, "origin": "seed"}
+{"ts": 1776374133.1529589, "type": "program_inserted", "program_id": 2, "generation": 0, "island": 1, "score": 64.0, "valid": true, "origin": "seed"}
+{"ts": 1776374133.1823058, "type": "program_inserted", "program_id": 3, "generation": 0, "island": 2, "score": 64.0, "valid": true, "origin": "seed"}
+{"ts": 1776374133.214389, "type": "program_inserted", "program_id": 4, "generation": 0, "island": 3, "score": 64.0, "valid": true, "origin": "seed"}
+{"ts": 1776374133.214677, "type": "generation_started", "generation": 1}
+{"ts": 1776374133.2200952, "type": "llm_call", "generation": 1, "island": 0, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374133.2201438, "type": "llm_call", "generation": 1, "island": 0, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374133.2201755, "type": "llm_call", "generation": 1, "island": 0, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374133.250592, "type": "program_inserted", "program_id": 5, "generation": 1, "island": 0, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374133.2813208, "type": "program_inserted", "program_id": 6, "generation": 1, "island": 0, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374133.3113828, "type": "program_inserted", "program_id": 7, "generation": 1, "island": 0, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374133.3379707, "type": "program_inserted", "program_id": 8, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374133.3682165, "type": "program_inserted", "program_id": 9, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374134.5438545, "type": "program_inserted", "program_id": 10, "generation": 1, "island": 0, "score": 76.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374141.1760097, "type": "program_inserted", "program_id": 11, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374147.737587, "type": "program_inserted", "program_id": 12, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374147.7401807, "type": "llm_call", "generation": 1, "island": 1, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374147.740227, "type": "llm_call", "generation": 1, "island": 1, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374147.7402458, "type": "llm_call", "generation": 1, "island": 1, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374147.7671332, "type": "program_inserted", "program_id": 13, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374147.7959313, "type": "program_inserted", "program_id": 14, "generation": 1, "island": 1, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374147.824385, "type": "program_inserted", "program_id": 15, "generation": 1, "island": 1, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374147.8573222, "type": "program_inserted", "program_id": 16, "generation": 1, "island": 1, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374147.8867505, "type": "program_inserted", "program_id": 17, "generation": 1, "island": 1, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374154.4588485, "type": "program_inserted", "program_id": 18, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374161.0978465, "type": "program_inserted", "program_id": 19, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374162.2870753, "type": "program_inserted", "program_id": 20, "generation": 1, "island": 1, "score": 76.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374162.2895832, "type": "llm_call", "generation": 1, "island": 2, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374162.2896428, "type": "llm_call", "generation": 1, "island": 2, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374162.2896676, "type": "llm_call", "generation": 1, "island": 2, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374162.3172379, "type": "program_inserted", "program_id": 21, "generation": 1, "island": 2, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374162.3454025, "type": "program_inserted", "program_id": 22, "generation": 1, "island": 2, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374162.3725562, "type": "program_inserted", "program_id": 23, "generation": 1, "island": 2, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374162.4032168, "type": "program_inserted", "program_id": 24, "generation": 1, "island": 2, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374162.4329987, "type": "program_inserted", "program_id": 25, "generation": 1, "island": 2, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374163.6583657, "type": "program_inserted", "program_id": 26, "generation": 1, "island": 2, "score": 76.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374170.3365097, "type": "program_inserted", "program_id": 27, "generation": 1, "island": 2, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374176.9380844, "type": "program_inserted", "program_id": 28, "generation": 1, "island": 2, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374176.942961, "type": "llm_call", "generation": 1, "island": 3, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374176.9430122, "type": "llm_call", "generation": 1, "island": 3, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374176.9430351, "type": "llm_call", "generation": 1, "island": 3, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374176.9707592, "type": "program_inserted", "program_id": 29, "generation": 1, "island": 3, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374177.0006304, "type": "program_inserted", "program_id": 30, "generation": 1, "island": 3, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374177.0393558, "type": "program_inserted", "program_id": 31, "generation": 1, "island": 3, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374177.0663717, "type": "program_inserted", "program_id": 32, "generation": 1, "island": 3, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374177.094316, "type": "program_inserted", "program_id": 33, "generation": 1, "island": 3, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374183.8695889, "type": "program_inserted", "program_id": 34, "generation": 1, "island": 3, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374185.3551142, "type": "program_inserted", "program_id": 35, "generation": 1, "island": 3, "score": 76.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374192.2605233, "type": "program_inserted", "program_id": 36, "generation": 1, "island": 3, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374192.2607536, "type": "generation_finished", "generation": 1, "best_score": 76.0, "candidates": 32}
+{"ts": 1776374192.2608669, "type": "generation_started", "generation": 2}
+{"ts": 1776374192.263867, "type": "llm_call", "generation": 2, "island": 0, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374192.2639043, "type": "llm_call", "generation": 2, "island": 0, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374192.2639225, "type": "llm_call", "generation": 2, "island": 0, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374193.5542731, "type": "program_inserted", "program_id": 37, "generation": 2, "island": 0, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374193.5875378, "type": "program_inserted", "program_id": 38, "generation": 2, "island": 0, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374194.9149752, "type": "program_inserted", "program_id": 39, "generation": 2, "island": 0, "score": 76.0, "valid": true, "origin": "crossover", "status": "ok"}
+{"ts": 1776374196.1672895, "type": "program_inserted", "program_id": 40, "generation": 2, "island": 0, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374197.448203, "type": "program_inserted", "program_id": 41, "generation": 2, "island": 0, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374202.8682554, "type": "program_inserted", "program_id": 42, "generation": 2, "island": 0, "score": 78.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374209.5144708, "type": "program_inserted", "program_id": 43, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374210.9922574, "type": "program_inserted", "program_id": 44, "generation": 2, "island": 0, "score": 77.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374210.9947813, "type": "llm_call", "generation": 2, "island": 1, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374210.9948335, "type": "llm_call", "generation": 2, "island": 1, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374210.9948559, "type": "llm_call", "generation": 2, "island": 1, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374212.2063537, "type": "program_inserted", "program_id": 45, "generation": 2, "island": 1, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374218.821223, "type": "program_inserted", "program_id": 46, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "crossover", "status": "sandbox_error"}
+{"ts": 1776374220.341572, "type": "program_inserted", "program_id": 47, "generation": 2, "island": 1, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374221.6611817, "type": "program_inserted", "program_id": 48, "generation": 2, "island": 1, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374221.6923115, "type": "program_inserted", "program_id": 49, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374228.417131, "type": "program_inserted", "program_id": 50, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374230.2202365, "type": "program_inserted", "program_id": 51, "generation": 2, "island": 1, "score": 77.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374236.9044185, "type": "program_inserted", "program_id": 52, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374236.907449, "type": "llm_call", "generation": 2, "island": 2, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374236.9075363, "type": "llm_call", "generation": 2, "island": 2, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374236.9075644, "type": "llm_call", "generation": 2, "island": 2, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374236.9719903, "type": "program_inserted", "program_id": 53, "generation": 2, "island": 2, "score": null, "valid": false, "origin": "crossover", "status": "failed"}
+{"ts": 1776374236.9988103, "type": "program_inserted", "program_id": 54, "generation": 2, "island": 2, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374237.0289593, "type": "program_inserted", "program_id": 55, "generation": 2, "island": 2, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374238.1965892, "type": "program_inserted", "program_id": 56, "generation": 2, "island": 2, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374238.2248049, "type": "program_inserted", "program_id": 57, "generation": 2, "island": 2, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374244.8135753, "type": "program_inserted", "program_id": 58, "generation": 2, "island": 2, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374246.4549682, "type": "program_inserted", "program_id": 59, "generation": 2, "island": 2, "score": 77.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374251.6694868, "type": "program_inserted", "program_id": 60, "generation": 2, "island": 2, "score": 78.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374251.6723244, "type": "llm_call", "generation": 2, "island": 3, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374251.6723685, "type": "llm_call", "generation": 2, "island": 3, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374251.6723905, "type": "llm_call", "generation": 2, "island": 3, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374252.9653215, "type": "program_inserted", "program_id": 61, "generation": 2, "island": 3, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374252.992962, "type": "program_inserted", "program_id": 62, "generation": 2, "island": 3, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776374253.0242374, "type": "program_inserted", "program_id": 63, "generation": 2, "island": 3, "score": 64.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374253.05302, "type": "program_inserted", "program_id": 64, "generation": 2, "island": 3, "score": null, "valid": false, "origin": "crossover", "status": "failed"}
+{"ts": 1776374254.282102, "type": "program_inserted", "program_id": 65, "generation": 2, "island": 3, "score": 76.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776374255.7672396, "type": "program_inserted", "program_id": 66, "generation": 2, "island": 3, "score": 77.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374261.2293365, "type": "program_inserted", "program_id": 67, "generation": 2, "island": 3, "score": 78.0, "valid": true, "origin": "llm", "status": "ok"}
+{"ts": 1776374267.911517, "type": "program_inserted", "program_id": 68, "generation": 2, "island": 3, "score": null, "valid": false, "origin": "llm", "status": "sandbox_error"}
+{"ts": 1776374267.911716, "type": "generation_finished", "generation": 2, "best_score": 78.0, "candidates": 32}
+{"ts": 1776374267.9117904, "type": "generation_started", "generation": 3}
+{"ts": 1776374267.9151824, "type": "llm_call", "generation": 3, "island": 0, "temperature": 0.4, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374267.9152303, "type": "llm_call", "generation": 3, "island": 0, "temperature": 0.8, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374267.9152513, "type": "llm_call", "generation": 3, "island": 0, "temperature": 1.0, "cached": true, "elapsed": 0.0, "error": null}
+{"ts": 1776374269.5362947, "type": "program_inserted", "program_id": 69, "generation": 3, "island": 0, "score": 77.0, "valid": true, "origin": "mutation", "status": "ok"}

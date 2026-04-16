@@ -1,0 +1,15 @@
+# Problem
+4x4 matrix multiplication over GF(2). Return {'products': [[a_mask, b_mask], ...], 'C': [16 XOR-recipe masks]} from solve(). a_mask and b_mask are 16-bit masks selecting entries of A (resp. B) row-major; each product is the parity of A-sum times parity of B-sum; C recipes say which products to XOR. Minimize number of products.
+
+# Current best candidates (lower score or higher score depending on the problem):
+
+## Candidate 0 — score=64.0
+```python
+def solve():
+    products = [(1, 1), (2, 16), (4, 256), (8, 4096), (1, 2), (2, 32), (4, 512), (8, 8192), (1, 4), (2, 64), (4, 1024), (8, 16384), (1, 8), (2, 128), (4, 2048), (8, 32768), (16, 1), (32, 16), (64, 256), (128, 4096), (16, 2), (32, 32), (64, 512), (128, 8192), (16, 4), (32, 64), (64, 1024), (128, 16384), (16, 8), (32, 128), (64, 2048), (128, 32768), (256, 1), (512, 16), (1024, 256), (2048, 4096), (256, 2), (512, 32), (1024, 512), (2048, 8192), (256, 4), (512, 64), (1024, 1024), (2048, 16384), (256, 8), (512, 128), (1024, 2048), (2048, 32768), (4096, 1), (8192, 16), (16384, 256), (32768, 4096), (4096, 2), (8192, 32), (16384, 512), (32768, 8192), (4096, 4), (8192, 64), (16384, 1024), (32768, 16384), (4096, 8), (8192, 128), (16384, 2048), (32768, 32768)]
+    C = [15, 240, 3840, 61440, 983040, 15728640, 251658240, 4026531840, 64424509440, 1030792151040, 16492674416640, 263882790666240, 4222124650659840, 67553994410557440, 1080863910568919040, 17293822569102704640]
+    return {'products': products, 'C': C}
+```
+
+# Task
+Propose a NEW program that likely scores better. Output exactly one ```python``` block containing the full program, no commentary.

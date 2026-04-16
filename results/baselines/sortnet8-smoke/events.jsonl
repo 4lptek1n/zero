@@ -1,0 +1,65 @@
+{"ts": 1776371901.2622228, "type": "run_started", "run_id": 1, "problem": "sortnet8", "config": {"problem": "sortnet8", "seed": 0, "output_dir": "results/baselines/sortnet8-smoke", "use_llm": false, "evolution": {"island_count": 2, "island_size": 10, "generations": 5, "migration_every": 10, "migration_fraction": 0.1, "tournament_size": 3, "crossover_rate": 0.2, "mutation_rate": 1.0, "elitism": 1}, "sandbox": {"cpu_seconds": 5.0, "wall_seconds": 10.0, "memory_mb": 512}, "llm": {"model": "claude-opus-4-6", "temperatures": [0.4, 0.8, 1.0], "max_tokens": 8192, "parallel_calls": 3, "top_k_context": 3, "cache_dir": ".zero_cache/llm"}}}
+{"ts": 1776371901.2623575, "type": "llm_status", "enabled": false, "model": "claude-opus-4-6"}
+{"ts": 1776371901.4767158, "type": "program_inserted", "program_id": 1, "generation": 0, "island": 0, "score": 19.0, "valid": true, "origin": "seed"}
+{"ts": 1776371901.5902307, "type": "program_inserted", "program_id": 2, "generation": 0, "island": 1, "score": 19.0, "valid": true, "origin": "seed"}
+{"ts": 1776371901.59124, "type": "generation_started", "generation": 1}
+{"ts": 1776371901.7008016, "type": "program_inserted", "program_id": 3, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371901.8102334, "type": "program_inserted", "program_id": 4, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371901.9144285, "type": "program_inserted", "program_id": 5, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.0196009, "type": "program_inserted", "program_id": 6, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.122764, "type": "program_inserted", "program_id": 7, "generation": 1, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.2296066, "type": "program_inserted", "program_id": 8, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.3382468, "type": "program_inserted", "program_id": 9, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.4493473, "type": "program_inserted", "program_id": 10, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.5520463, "type": "program_inserted", "program_id": 11, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.6600614, "type": "program_inserted", "program_id": 12, "generation": 1, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.6606183, "type": "generation_finished", "generation": 1, "best_score": 19.0, "candidates": 10}
+{"ts": 1776371902.6611092, "type": "generation_started", "generation": 2}
+{"ts": 1776371902.7743933, "type": "program_inserted", "program_id": 13, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.8808682, "type": "program_inserted", "program_id": 14, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371902.98505, "type": "program_inserted", "program_id": 15, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.0885432, "type": "program_inserted", "program_id": 16, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.1931646, "type": "program_inserted", "program_id": 17, "generation": 2, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.301742, "type": "program_inserted", "program_id": 18, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.4077249, "type": "program_inserted", "program_id": 19, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.5099585, "type": "program_inserted", "program_id": 20, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.619818, "type": "program_inserted", "program_id": 21, "generation": 2, "island": 1, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371903.7270525, "type": "program_inserted", "program_id": 22, "generation": 2, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.727757, "type": "generation_finished", "generation": 2, "best_score": 19.0, "candidates": 10}
+{"ts": 1776371903.7282562, "type": "generation_started", "generation": 3}
+{"ts": 1776371903.8338637, "type": "program_inserted", "program_id": 23, "generation": 3, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371903.9378018, "type": "program_inserted", "program_id": 24, "generation": 3, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.0452738, "type": "program_inserted", "program_id": 25, "generation": 3, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.14909, "type": "program_inserted", "program_id": 26, "generation": 3, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.2535536, "type": "program_inserted", "program_id": 27, "generation": 3, "island": 0, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371904.361065, "type": "program_inserted", "program_id": 28, "generation": 3, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.4680934, "type": "program_inserted", "program_id": 29, "generation": 3, "island": 1, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371904.7652519, "type": "program_inserted", "program_id": 30, "generation": 3, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.8709297, "type": "program_inserted", "program_id": 31, "generation": 3, "island": 1, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371904.9781437, "type": "program_inserted", "program_id": 32, "generation": 3, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371904.97877, "type": "generation_finished", "generation": 3, "best_score": 19.0, "candidates": 10}
+{"ts": 1776371904.9792135, "type": "generation_started", "generation": 4}
+{"ts": 1776371905.0865242, "type": "program_inserted", "program_id": 33, "generation": 4, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.1897638, "type": "program_inserted", "program_id": 34, "generation": 4, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.2952967, "type": "program_inserted", "program_id": 35, "generation": 4, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.4011633, "type": "program_inserted", "program_id": 36, "generation": 4, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.5056503, "type": "program_inserted", "program_id": 37, "generation": 4, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.6102927, "type": "program_inserted", "program_id": 38, "generation": 4, "island": 1, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371905.7162962, "type": "program_inserted", "program_id": 39, "generation": 4, "island": 1, "score": null, "valid": false, "origin": "crossover", "status": "failed"}
+{"ts": 1776371905.8208835, "type": "program_inserted", "program_id": 40, "generation": 4, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371905.9235096, "type": "program_inserted", "program_id": 41, "generation": 4, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.0335424, "type": "program_inserted", "program_id": 42, "generation": 4, "island": 1, "score": null, "valid": false, "origin": "crossover", "status": "failed"}
+{"ts": 1776371906.0341027, "type": "generation_finished", "generation": 4, "best_score": 19.0, "candidates": 10}
+{"ts": 1776371906.0345597, "type": "generation_started", "generation": 5}
+{"ts": 1776371906.1359012, "type": "program_inserted", "program_id": 43, "generation": 5, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.2412612, "type": "program_inserted", "program_id": 44, "generation": 5, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.3459904, "type": "program_inserted", "program_id": 45, "generation": 5, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.4500446, "type": "program_inserted", "program_id": 46, "generation": 5, "island": 0, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371906.5548267, "type": "program_inserted", "program_id": 47, "generation": 5, "island": 0, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.663088, "type": "program_inserted", "program_id": 48, "generation": 5, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.7704256, "type": "program_inserted", "program_id": 49, "generation": 5, "island": 1, "score": 19.0, "valid": true, "origin": "mutation", "status": "ok"}
+{"ts": 1776371906.874224, "type": "program_inserted", "program_id": 50, "generation": 5, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371906.98128, "type": "program_inserted", "program_id": 51, "generation": 5, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371907.0840464, "type": "program_inserted", "program_id": 52, "generation": 5, "island": 1, "score": null, "valid": false, "origin": "mutation", "status": "failed"}
+{"ts": 1776371907.0847013, "type": "generation_finished", "generation": 5, "best_score": 19.0, "candidates": 10}
+{"ts": 1776371907.0851128, "type": "run_finished", "problem": "sortnet8", "generations": 5, "total_programs": 52, "best_score": 19.0, "best_program_id": 1, "baseline_score": 19.0}

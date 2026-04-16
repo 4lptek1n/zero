@@ -1,0 +1,11 @@
+{
+  "problem": "sortnet8",
+  "ok": true,
+  "valid": true,
+  "score": 19.0,
+  "baseline_score": 19.0,
+  "higher_is_better": false,
+  "error": null,
+  "elapsed_seconds": 5.178040790007799,
+  "cached": false
+}

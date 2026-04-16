@@ -1,0 +1,90 @@
+
+
+```python
+def solve():
+    n = 6
+    
+    # We need to find a large cap set in F_3^6 (no three distinct vectors sum to 0 mod 3)
+    # The known maximum is 112.
+    
+    # We'll use a greedy search with backtracking/random restarts to find a large cap set.
+    # A cap set is a subset of F_3^6 where no three distinct elements x, y, z satisfy x+y+z = 0 (mod 3).
+    # Equivalently, for any two elements x, y in the set, the element -(x+y) mod 3 = (3-x-y) mod 3 
+    # should NOT be in the set (unless it equals x or y).
+    
+    import itertools
+    import random
+    
+    all_vectors = list(itertools.product(range(3), repeat=n))
+    
+    def is_cap_set(vecs_set, vecs_list):
+        """Check if adding nothing violates cap set property"""
+        for i in range(len(vecs_list)):
+            for j in range(i+1, len(vecs_list)):
+                v1 = vecs_list[i]
+                v2 = vecs_list[j]
+                neg_sum = tuple((3 - v1[k] - v2[k]) % 3 for k in range(n))
+                if neg_sum != v1 and neg_sum != v2 and neg_sum in vecs_set:
+                    return False
+        return True
+    
+    def can_add(vec, current_set):
+        """Check if vec can be added to current_set without violating cap set property"""
+        vec_t = tuple(vec)
+        for v in current_set:
+            neg_sum = tuple((3 - vec_t[k] - v[k]) % 3 for k in range(n))
+            if neg_sum != vec_t and neg_sum != v and neg_sum in current_set:
+                return False
+        return True
+    
+    best_set = set()
+    
+    for trial in range(200):
+        random.seed(trial * 137 + 42)
+        order = list(all_vectors)
+        random.shuffle(order)
+        
+        current_set = set()
+        current_list = []
+        
+        for vec in order:
+            vec_t = tuple(vec)
+            if can_add(vec_t, current_set):
+                current_set.add(vec_t)
+                current_list.append(vec_t)
+        
+        if len(current_set) > len(best_set):
+            best_set = current_set.copy()
+    
+    # Try a second phase: for each element not in best_set, try swapping
+    for improvement_round in range(5):
+        improved = False
+        best_list = list(best_set)
+        not_in = [v for v in all_vectors if tuple(v) not in best_set]
+        random.shuffle(not_in)
+        
+        for v_add in not_in:
+            v_add_t = tuple(v_add)
+            # Find which elements conflict
+            conflicts = set()
+            for i, v1 in enumerate(best_list):
+                neg_sum = tuple((3 - v_add_t[k] - v1[k]) % 3 for k in range(n))
+                if neg_sum != v_add_t and neg_sum != v1 and neg_sum in best_set:
+                    conflicts.add(neg_sum)
+                    conflicts.add(v1)
+            
+            if len(conflicts) <= 1:
+                # Remove conflicts, add v_add
+                for c in conflicts:
+                    best_set.discard(c)
+                best_set.add(v_add_t)
+                best_list = list(best_set)
+                if len(conflicts) == 0:
+                    improved = True
+        
+        if not improved:
+            break
+    
+    vectors = [list(v) for v in best_set]
+    return {"n": n, "vectors": vectors}
+```

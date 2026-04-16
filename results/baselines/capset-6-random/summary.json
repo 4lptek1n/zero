@@ -1,0 +1,8 @@
+{
+  "problem": "capset",
+  "generations": 200,
+  "total_programs": 4084,
+  "best_score": 64.0,
+  "best_program_id": 4084,
+  "baseline_score": 112.0
+}

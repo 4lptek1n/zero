@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software in your research, please cite it as below."
+title: "zero: an open-source AlphaEvolve-style evolutionary algorithm discovery engine"
+abstract: >
+  zero is an open-source clone of DeepMind's AlphaEvolve (April 2025). It pairs a
+  population-based island-model evolutionary search with an LLM-driven mutation
+  operator that proposes new candidate programs each generation. zero ships with
+  three problem evaluators (sortnet8, matmul44_z2, capset) and reproduces several
+  published baselines.
+authors:
+  - family-names: "Keser"
+    given-names: "Yusuf"
+    email: "kesermkkdkd@gmail.com"
+version: "0.1.0"
+date-released: "2026-04-16"
+license: MIT
+repository-code: "https://github.com/yusuf4lp/zero"
+keywords:
+  - alphaevolve
+  - evolutionary-algorithms
+  - llm-agents
+  - program-synthesis
+  - open-source
+preferred-citation:
+  type: software
+  title: "zero: an open-source AlphaEvolve-style evolutionary algorithm discovery engine"
+  authors:
+    - family-names: "Keser"
+      given-names: "Yusuf"
+  year: 2026
+  url: "https://github.com/yusuf4lp/zero"
