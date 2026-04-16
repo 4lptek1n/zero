@@ -9,12 +9,12 @@ abstract: >
   published baselines.
 authors:
   - family-names: "Keser"
-    given-names: "Yusuf"
-    email: "kesermkkdkd@gmail.com"
+    given-names: "Alptekin"
+    email: "keseralptekin@gmail.com"
 version: "0.1.0"
 date-released: "2026-04-16"
 license: MIT
-repository-code: "https://github.com/yusuf4lp/zero"
+repository-code: "https://github.com/4lptek1n/zero"
 keywords:
   - alphaevolve
   - evolutionary-algorithms
@@ -26,6 +26,6 @@ preferred-citation:
   title: "zero: an open-source AlphaEvolve-style evolutionary algorithm discovery engine"
   authors:
     - family-names: "Keser"
-      given-names: "Yusuf"
+      given-names: "Alptekin"
   year: 2026
-  url: "https://github.com/yusuf4lp/zero"
+  url: "https://github.com/4lptek1n/zero"
